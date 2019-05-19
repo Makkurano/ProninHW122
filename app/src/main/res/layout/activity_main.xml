@@ -10,7 +10,7 @@
         android:id="@+id/titletext"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/TextTitle"
+        android:text="@string/textTitle"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#E91E63"
@@ -28,7 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titletext"
         app:srcCompat="@android:drawable/alert_light_frame"
-        android:contentDescription="@string/PhotoTitle" />
+        android:contentDescription="@string/photoTitle" />
 
     <Button
         android:id="@+id/bbatton"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="42dp"
         android:layout_marginTop="29dp"
-        android:text="@string/TextBackButton"
+        android:text="@string/textBackButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
         android:layout_marginEnd="42dp"
-        android:text="@string/TextFwdButton"
+        android:text="@string/textFwdButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -57,7 +57,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        android:text="@string/TextLinkDefault"
+        android:text="@string/textLinkDefault"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"

@@ -19,26 +19,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         imglink = findViewById(R.id.imglink);
-        Button Buttonb = findViewById(R.id.bbatton);
-        Buttonb.setOnClickListener(new ButtonB());
-        Button Buttonf = findViewById(R.id.fbutton);
-        Buttonf.setOnClickListener(new ButtonF());
-        imglink.setText(getString(R.string.TextLinkDefault)+rand);
+        Button bbutton = findViewById(R.id.bbatton);
+        Button fbutton = findViewById(R.id.fbutton);
+        bbutton.setOnClickListener(mClickListener);
+        fbutton.setOnClickListener(mClickListener);
+        imglink.setText(getString(R.string.textLinkDefault)+rand);
     }
 
-    class ButtonB implements View.OnClickListener {
-        @Override
+    private View.OnClickListener mClickListener = new View.OnClickListener() {
         public void onClick(View v) {
-            finish();
-        }
-    }
 
-    class ButtonF implements View.OnClickListener {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
+            switch (v.getId()) {
+                case R.id.bbatton:
+                    finish();
+                    break;
+                case R.id.fbutton:
+                    Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                    startActivity(intent);
+                default:
+            }
         }
-    }
+    };
 }
 
