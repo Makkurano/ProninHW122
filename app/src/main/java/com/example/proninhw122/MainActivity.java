@@ -12,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private TextView imglink;
+    int rand = 1+(int)((100-1+1)*Math.random());
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Buttonb.setOnClickListener(new ButtonB());
         Button Buttonf = findViewById(R.id.fbutton);
         Buttonf.setOnClickListener(new ButtonF());
+        imglink.setText(getString(R.string.TextLinkDefault)+rand);
     }
 
     class ButtonB implements View.OnClickListener {
@@ -35,9 +37,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            //startActivity(intent);
-            int rand = 1+(int)((100-1+1)*Math.random());
-            imglink.setText(getString(R.string.TextLinkDefault)+rand);
+            startActivity(intent);
         }
     }
 }
