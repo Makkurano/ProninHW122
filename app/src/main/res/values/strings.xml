@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ProninHW1.2.2</string>
+    <string name="TextTitle">Фотоальбом</string>
+    <string name="PhotoTitle">Фотография</string>
+    <string name="TextBackButton">Назад</string>
+    <string name="TextFwdButton">Вперед</string>
+    <string name="TextLinkDefault">Адрес картинки: http://myfile.org/</string>
 </resources>
