@@ -34,10 +34,10 @@ public class MainActivity extends AppCompatActivity {
     class ButtonF implements View.OnClickListener {
         @Override
         public void onClick(View v) {
-            int rand = 1+(int)((100-1+1)*Math.random());
             Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
-            imglink.setText("Адрес картинки: http://myfile.org/"+rand);
+            //startActivity(intent);
+            int rand = 1+(int)((100-1+1)*Math.random());
+            imglink.setText(getString(R.string.TextLinkDefault)+rand);
         }
     }
 }
